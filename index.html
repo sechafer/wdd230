@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,42 +12,62 @@
 </head>
 <body>
     <header>
-       <div>
-        <img src="profile.jpg" alt="Profile Picture">
+       <div id="hdTitle">
+        <img id="profile-img" src="images/profile.jpg" alt="Profile Picture">
         <span>Samuel Eli Chacon Fernandez</span>
        </div>
         
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="chamber.html">Chamber</a></li>
-                <li><a href="siteplan.html">Site Plan</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="chamber/siteplan.html">Site Plan</a></li>
                 <li><a href="form.html">Form</a></li>
             </ul>
         </nav>
     </header>
    
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
+        <h1 class="attribute" >WDD 230: Web Frontend Development</h1>
+        <div class="card-grid">
         <section class="card">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li><a href="#">Activity 1</a></li>
-                <li><a href="#">Activity 2</a></li>
-                <li><a href="#">Activity 3</a></li>
-                <!-- More activities will be added later -->
-            </ul>
+            <div class="card-header">
+               <h2>Learning Activities</h2>
+            </div>
+            <div class="card-content" >
+                <ul>
+                    <li>Week 01: <a href="https://codepen.io/Samuel-Eli-Chacon-Fernandez/pen/yLrGwYg" target="_blank" >Activity 1</a> |
+                    <a href="week01/media-query.html">Activity 2</a>|
+                    <a href="#">Activity 3</a></li>
+                    <li>Week 02:</li>
+                    <li>Week 03:</li>
+                    <li>Week 04:</li>
+                    <li>Week 05:</li>
+                    <li>Week 06:</li>
+
+                    
+                </ul>
+        </div>
         </section>
         <section class="card">
-            <h2>Information</h2>
-            <!-- Placeholder information about weather, visits, etc. -->
+            <div class="card-header">
+                <h2>Information</h2>
+             </div>
+             <div class="card-content" >
+
+             </div>
+
+            <!-- aqui aun no tengomas informacion -->
         </section>
+        </div>
     </main>
     <footer>
-        <p>&copy; <span id="currentYear"></span> Samuel Eli Chacon Fernandez</p>
+        <div class="footer-info">
+        <p>&copy; <span id="cYear"></span> Samuel Eli Chacon Fernandez</p>
+    </div>
         <p id="lastModified"></p>
     </footer>
 
-    
+    <script src="scripts/getDates.js"></script>   
 </body>
 </html>

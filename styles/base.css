@@ -1,0 +1,176 @@
+/* CSS Style Sheet for index.html the main site for wdd 230 vern wolfley*/
+
+/* import fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+:root {
+    /* volor de palatas general webpage */
+    --primary-color: #475304;
+    --secondary-color: #388016;
+    --accent1-color: #ffffff;
+    --accent2-color: #666666;
+    --accent3-color: #c0c0c0;
+    --accent4-color: #8c6e6e;
+
+    /* estilos de letas para el web site */
+    --heading-font: Paytone One, Georgia, serif;
+    --paragraph-font: "Trebuchet MS", Arial, sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #06005d; /* headlines on a white background */
+    --headline-color-on-color: white; /* headlines on a colored background */
+    --paragraph-color-on-white: #184571; /* paragraph text on a white background */
+    --paragraph-color-on-color: #4d4747; /* paragraph text on a colored background */
+    --paragraph-background-color: #ffffff;
+    --nav-link-color: #ffffff;
+    --nav-background-color: #2b5d00;
+    --nav-hover-link-color: #ffffff;
+    --nav-hover-background-color: #00539c;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    line-height: 1.15;
+    background-color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+}
+/* Vista para mobile */
+
+/* Header */
+
+#hdTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 20px;
+    background-color: var(--accent3-color);
+}
+
+#profile-img {
+    width: auto;
+    height: 100px;
+    border-radius: 5%;
+    
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--headline-color-on-white);
+}
+
+ul {
+    list-style-type: none; /* Elimina las viñetas */
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--primary-color);
+    color: var(--nav-link-color);
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--nav-link-color);
+}
+.navigation li a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    font-weight: 700;
+}
+
+
+
+/*cuerpo del site*/
+main {
+    display: flex;
+    flex-direction: column;
+   
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-white);
+}
+.card {
+    margin: 5px;
+}
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+}
+
+.card-content {
+    padding: 30px;
+}
+.card-content div{
+    margin: 0 0 10px 0;
+
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 25px 50px;
+    margin-top: auto;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--nav-hover-background-color);
+}
+
+footer p {
+    font-size: 0.65em;
+    margin: 5px;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
