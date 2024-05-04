@@ -80,6 +80,27 @@ ul {
     list-style-type: none; /* Elimina las viñetas */
 }
 
+/* Nav bar */
+#menu {
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em; 
+    color: var(--primary-color);
+    text-align: center;
+    width: 50px;
+    height: auto;
+}
+
+#menu::before {
+    font-size: 2rem;
+    content: "☰";
+}
+
+#menu.open::before {
+    font-size: 1.5rem;
+    content: "X";
+}
+
 .navigation {
     display: flex;
     flex-direction: column;
@@ -90,7 +111,9 @@ ul {
     padding: 0;
     white-space: nowrap;
 }
-
+.navigation li {
+    display: none;
+}
 .navigation li a {
     display: block;
     padding: 1.5rem;
@@ -103,14 +126,34 @@ ul {
     color: var(--nav-hover-link-color);
     font-weight: 700;
 }
+.open li {
+    display: block;
+    width: 100%;
+}
+.open li a {
+    display: block;
+}
 
+.navigation .active {
+    color: yellow;
+}
 
+/*modo nocturno*/
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
 
-/*cuerpo del site*/
+/* Main content section */
 main {
     display: flex;
     flex-direction: column;
-   
+    /* text-align: center;
+    margin: 0 75px; */
     margin: 0 auto;
     padding: 20px;
     background-color: var(--paragraph-background-color);
@@ -136,6 +179,8 @@ main {
     margin: 0 0 10px 0;
 
 }
+
+
 
 /* Footer */
 footer {
