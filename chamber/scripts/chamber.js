@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function() {
+
 // Display the copyright year
 function getCopyrightYear() {
     const year = new Date().getFullYear();
@@ -22,3 +24,6 @@ function screenMode() {
         section.classList.toggle("dark-mode");
     });
 }
+
+
+});
