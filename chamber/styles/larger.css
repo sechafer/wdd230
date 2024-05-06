@@ -1,0 +1,22 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1200px) {
+    #nav-title {
+        font-size: 1.5em;
+    }
+
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    form label.sbs {
+        padding: 0.4rem 0;
+    }
+    .nav-info input {
+        display: none;
+    }
+    .list section {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: "title address1 address2 phone email";
+    }
+
+}

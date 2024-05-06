@@ -1,0 +1,609 @@
+
+/* Google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #dd6e42;
+    --secondary-color: #e8dab2;
+    --accent1-color: #4f6d7a;
+    --accent2-color: #c0d6df;
+    --accent3-color: #f88f8f;
+    --text-color-main: rgb(17, 14, 14);
+    --text-color-secondary: #fff;
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Roboto", sans-serif;
+    --paragraph-font: "Open Sans", serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: var(--primary-color); /* headlines on a white background */
+    --headline-color-on-color: var(--text-color-secondary); /* headlines on a colored background */
+    --paragraph-color-on-white: var(--text-color-main); /* paragraph text on a white background */
+    --paragraph-color-on-color: var(--text-color-main); /* paragraph text on a colored background */
+    --paragraph-background-color: var(--accent1-color); /* paragraph background color */
+    --nav-link-color: var(--text-color-secondary);
+    --nav-background-color: var(--primary-color);
+    --nav-hover-link-color: var(--text-color-main);
+    --nav-hover-background-color: var(--accent2-color);
+}
+
+
+/* Mobile CSS ******************************** */
+
+/*  Styles for site */
+html,
+body {
+    display: flex;
+    flex-direction: column;
+        margin: 0;
+    padding: 0;
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    background-color: #f8fafc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.dark-mode {
+    background-color: #1e293b;
+    color: var(--text-color-secondary);
+}
+/* Header and Navigation *********************** */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 20px 50px;
+    background-color: var(--nav-background-color);
+    box-shadow: 0 1px 8px #ddd;
+}
+.nav-brand {
+    display: flex;
+    align-items: center;
+}
+.nav-brand img {
+    width: 60px;
+    height: auto;
+}
+.nav-box {
+    display: flex;
+    gap: 20px;
+}
+.nav-info {
+    display: flex;
+    align-items: center;
+}
+#nav-title {
+    margin-right: auto;
+    font-size: 0.8em;
+    color: var(--nav-link-color);
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+header a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+    transition: all 0.3s ease 0s;
+}
+header a:hover,
+.active-page:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-link-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: normal;
+}
+.active-page {
+    color: #fde047;
+    font-weight: 900;
+}
+
+/* Dark Mode Button Switch ********************* */
+.dark-mode-btn {
+    display: flex;
+    order: 4;
+}
+.toggle {
+    background-color: #1e293b;
+    width: 50px;
+    height: 21px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.nav-info input {
+    display: none;
+}
+.dark-mode-btn input {
+    display: none;
+}
+.slider {
+    height: 15px;
+    width: 15px;
+    background-color: var(--nav-link-color);
+    border-radius: 12px;
+    margin: 4px;
+}
+input:checked + .toggle {
+    background-color: var(--nav-link-color);
+    /* background-color: #1e293b; */
+}
+input:checked + .toggle > .slider {
+    align-self: flex-end;
+    background-color: #1e293b;
+}
+/* *** Main Section ***************************** */
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 0 50px;
+    padding: 0 25px 25px 25px;
+}
+
+
+/* TEMP ************************* */
+.hero {
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+.hero-home {
+    background-image: url("../images/vista-aerea-paco-municipal-de-sao-bernardo-do-campo.webp");
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.hero-content h2 {
+    font-size: 3em;
+    font-weight: 800;
+    color: var(--text-color-secondary);
+    margin: 20px;
+}
+.hero-content p {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--text-color-secondary);
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: var(--accent3-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--text-color-secondary);
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #87bbef;
+}
+.spotlights {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    text-align: center;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    flex: 1;
+    max-width: 100%;
+}
+
+.card {
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-color: #cbd5e1;
+  
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.card-header {
+    margin: 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.8rem;
+    font-size: large;
+    font-weight: 700;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 1.2rem;
+}
+.card-body h3 {
+    margin: 0 0 8px 0;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.75rem;
+}
+.contact-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card.dark-mode {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.7);
+    background-color: #4b5563;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+   
+}
+
+
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    row-gap: 20px;
+    order: 1;
+}
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.weather-icon img {
+    width: 70px;
+    height: auto;
+}
+.weather-info.dark-mode {
+    background-color: #4b5563;
+}
+
+/* *** Footer ************************************ */
+
+footer section {
+    background-color: var(--primary-color);
+    color: var(--text-color-secondary);
+    padding: 30px 30px 20px 30px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.footer-title {
+    grid-column: 1 / span 9;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-title h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 1.3em;
+}
+
+.footer-title img {
+    width: 60px;
+    height: auto;
+}
+
+.footer h3 {
+    margin: 0.5em 0;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: var(--text-color-secondary);
+}
+
+.footer-addr {
+    grid-column: 1 / span 5;
+    grid-row: 2;
+    margin-bottom: 2em;
+}
+
+.footer address {
+    font-style: normal;
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: var(--accent1-color);
+    border-radius: 100px;
+    color: var(--text-color-secondary);
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0.15em 1.3em;
+    text-decoration: none;
+}
+
+.footer-btn:hover {
+    background-color: var(--accent4-color);
+}
+
+.footer-nav {
+    grid-column: 8 / span 1;
+    grid-row: 2;
+    margin-bottom: 2em;
+}
+
+.footer-nav ul {
+    flex: 1 50%;
+    margin-right: 1.25em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.footer-nav ul a {
+    color: var(--text-color-secondary);
+}
+
+.footer-nav li {
+    line-height: 2em;
+}
+.footer-nav a {
+    text-decoration: none;
+}
+.footer-nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.legal {
+    grid-row: 3;
+    grid-column: 1 / span 9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 0.7em;
+    color: var(--text-color-secondary);
+}
+
+/* MObile CSS ******************************** */
+
+/* Add this CSS for mobile styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: var(--nav-background-color);
+        z-index: 1000;
+    }
+    .nav-links ul {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-links ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .nav-links ul li a {
+        display: block;
+        color: var(--nav-link-color);
+        padding: 10px 0;
+    }
+
+    .nav-toggle:checked + .nav-links {
+        display: block;
+    }
+
+    .nav-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-btn span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: var(--nav-link-color);
+        margin: 6px 0;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "sidebar"
+            "content";
+    }
+}
+
+
+
+/* Weather Article ********************************* */
+
+#weather {
+    width: 100%;
+}
+#weather h3,
+#five-day h3 {
+    margin: 0;
+    padding: 15px;
+    background-color: orange;
+    color: var(--text-color-main);
+    text-transform: uppercase;
+}
+
+#weather p {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+#weather figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.temp-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#current-temp {
+    font-size: 3em;
+    font-weight: 800;
+}
+.temp-area figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+#weather-description {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.alt-weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 5px;
+}
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 15px;
+    /* border: 1px solid var(--accent3-color); */
+    font-size: 0.8rem;
+}
+.weather-box span {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+#five-day {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#forecast .weather-day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    /* margin: 20px 0; */
+}
+#forecast .weather-day:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+.weather-day h5 {
+    /* font-size: 1.2rem; */
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.weather-day figcaption {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+#forecast figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.temp-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temp-div p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+.temp-div p:nth-last-child(1) {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+/* Banner on home page */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    color: var(--text-color-secondary);
+    padding: 30px;
+    margin-top: 2rem;
+    text-align: center;
+}
+.banner-hide {
+    display: none;
+}
+
+.banner p {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+#closeBanner {
+    background: none;
+    color: var(--text-color-secondary);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: x-large;
+    /* margin-top: 5px; */
+}
