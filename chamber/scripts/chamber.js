@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
 
 // Display the copyright year
 function getCopyrightYear() {
@@ -26,4 +25,3 @@ function screenMode() {
 }
 
 
-});
