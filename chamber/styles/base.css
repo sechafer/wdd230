@@ -6,14 +6,15 @@
 
 
 :root {
-    /* change the values below to your colors from your palette */
-    --primary-color: #dd6e42;
-    --secondary-color: #e8dab2;
-    --accent1-color: #4f6d7a;
-    --accent2-color: #c0d6df;
-    --accent3-color: #f88f8f;
-    --text-color-main: rgb(17, 14, 14);
-    --text-color-secondary: #fff;
+    --primary-color: #004d40; /* Verde oscuro */
+    --secondary-color: #fafafa; /* Blanco */
+    --accent1-color: #ff9800; /* Naranja */
+    --accent2-color: #3949ab; /* Azul oscuro */
+    --accent3-color: #e91e63; /* Rosa */
+    --text-color-main: #212121; /* Gris oscuro */
+    --text-color-secondary: #ffffff; /* Blanco */
+    --accent4-color: #ff5722; /* Naranja rojizo */
+    --accent5-color: #3f51b5; /* Azul */
 
     /* change the values below to your chosen font(s) */
     --heading-font: "Roboto", sans-serif;
@@ -46,7 +47,9 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: 1.5;
-    background-color: #f8fafc;
+    background-color: var(--secondary-color);
+    color: var(--text-color-main);
+
 }
 
 h1,
@@ -61,7 +64,7 @@ h6 {
 }
 
 .dark-mode {
-    background-color: #1e293b;
+    background-color: var(--accent5-color);
     color: var(--text-color-secondary);
 }
 /* Header and Navigation *********************** */
@@ -71,7 +74,7 @@ header {
     justify-content: space-between;
     padding: 20px 10px 20px 50px;
     background-color: var(--nav-background-color);
-    box-shadow: 0 1px 8px #ddd;
+    box-shadow: 0 1px 8px var(--accent2-color);
 }
 .nav-brand {
     display: flex;
@@ -114,9 +117,24 @@ header a:hover,
     font-weight: normal;
 }
 .active-page {
-    color: #fde047;
+    color: var(--secondary-color);
     font-weight: 900;
 }
+
+article>div > div > div > a {
+    color: var(--secondary-color);
+    
+      }
+    .card-header-gold{
+        background-color: -var(--accent3-color);
+      }
+
+      body > main > div.spotlights > div > article> h3{
+        background-color: var(--accent3-color);
+      }
+     .spotlights > div > article > div > div > address{
+        color: var(--text-color-secondary);
+     }
 
 /* Dark Mode Button Switch ********************* */
 .dark-mode-btn {
@@ -124,7 +142,7 @@ header a:hover,
     order: 4;
 }
 .toggle {
-    background-color: #1e293b;
+    background-color: var(--accent1-color);
     width: 50px;
     height: 21px;
     border-radius: 16px;
@@ -146,11 +164,11 @@ header a:hover,
 }
 input:checked + .toggle {
     background-color: var(--nav-link-color);
-    /* background-color: #1e293b; */
+  
 }
 input:checked + .toggle > .slider {
     align-self: flex-end;
-    background-color: #1e293b;
+    background-color: var(--accent1-color);
 }
 /* *** Main Section ***************************** */
 main {
@@ -199,16 +217,18 @@ main {
 
 .btn {
     padding: 10px 20px;
-    background-color: var(--accent3-color);
+    background-color: var(--accent2-color);
+    color: var(--text-color-secondary);
+    
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    color: var(--text-color-secondary);
+    
     text-decoration: none;
 }
 
 .btn:hover {
-    background-color: #87bbef;
+    background-color: var(--accent4-color);
 }
 .spotlights {
     display: flex;
@@ -227,9 +247,9 @@ main {
 .card {
     border-radius: 0.5rem;
     border-width: 1px;
-    border-color: #cbd5e1;
+    border-color: var(--accent1-color);
   
-    background-color: #ffffff;
+    background-color: var(--accent2-color);
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 .card-header {
@@ -263,7 +283,7 @@ main {
 
 .card.dark-mode {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.7);
-    background-color: #4b5563;
+    background-color: var(--accent1-color);
 }
 
 .info {
@@ -288,7 +308,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 50px 50px;
-    background-color: lightgrey;
+    background-color:var(--text-color-secondary);
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -297,7 +317,7 @@ main {
     height: auto;
 }
 .weather-info.dark-mode {
-    background-color: #4b5563;
+    background-color: var(--accent1-color);
 }
 
 /* *** Footer ************************************ */
@@ -306,7 +326,7 @@ footer section {
     background-color: var(--primary-color);
     color: var(--text-color-secondary);
     padding: 30px 30px 20px 30px;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid var(--text-color-secondary);
 }
 
 .footer {
@@ -358,7 +378,7 @@ footer section {
     justify-content: center;
     height: 36px;
     max-width: max-content;
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     border-radius: 100px;
     color: var(--text-color-secondary);
     line-height: 0;
@@ -370,6 +390,7 @@ footer section {
 
 .footer-btn:hover {
     background-color: var(--accent4-color);
+    color: var(--text-color-main);
 }
 
 .footer-nav {
@@ -464,6 +485,25 @@ footer section {
             "sidebar"
             "content";
     }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        flex: 1;
+        max-width: 100%;
+        border: var(--accent1-color);
+        
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 1.2rem;
+        background-color: var(--accent1-color);
+    
+    }
 }
 
 
@@ -477,7 +517,7 @@ footer section {
 #five-day h3 {
     margin: 0;
     padding: 15px;
-    background-color: orange;
+    background-color: var(--accent3-color);
     color: var(--text-color-main);
     text-transform: uppercase;
 }
