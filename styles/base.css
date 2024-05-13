@@ -14,7 +14,7 @@
     --accent4-color: #8c6e6e;
 
     /* estilos de letas para el web site */
-    --heading-font: "Opem Sans", Georgia, serif;
+    --heading-font: "Open Sans", Georgia, serif;
     --paragraph-font: "Open Sans", Arial, sans-serif;
 
     /* these colors below should be chosen from among your palette colors above */
@@ -72,6 +72,7 @@ h6 {
     
 }
 
+
 h1 {
     font-size: 2em;
     color: var(--headline-color-on-white);
@@ -80,6 +81,48 @@ h1 {
 ul {
     list-style-type: none; 
 }
+
+
+.hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	width: 100%;
+    max-width: 960px;
+    height: auto; 
+
+}
+
+#hero-image {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+.herolabel {
+	position: absolute;
+    color: rgb(101, 11, 227);
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family:"Great Vibes", serif;
+}
+
+
+
+
 
 /* Nav bar */
 #menu {

@@ -15,7 +15,10 @@
     .attribute {
         font-size: 1.75em;
     }
-
+    #hero-image {
+        height: 100%;
+        width: fit-content;
+    }
     /* seccion de card */
     .card-grid {
         display: grid;
@@ -24,6 +27,24 @@
     .card-grid section:nth-child(1) {
         grid-column: span 2;
     }
+/*google mapas*/
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+  }
+  
+  .google-map iframe {
+    
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    padding: 10px;
+    background-color: var(--nav-link-color);
+    border: black;
+  }
 
   footer {
     align-items: center;
