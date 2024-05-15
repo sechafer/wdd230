@@ -98,6 +98,10 @@ header {
     color: var(--nav-link-color);
 }
 
+div.nav-brand > img{
+    border-radius: 50%;
+    margin: 5px;
+}
 header li {
     list-style: none;
     display: inline-block;
@@ -177,49 +181,7 @@ main {
     margin: 0 50px 0 50px;
     padding: 0 25px 25px 25px;
 }
-/* TEMP ************************* */
-/* .hero-temp {
-    position: relative;
-}
-.hero-temp img {
-    width: 100%;
-    height: auto;
-}
-.hero-info {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    background: radial-gradient(#fff, #6596c5);
-    border: 1px solid rgba(101, 150, 197, 1);
-    padding: 0.8rem;
-    box-shadow: 0 0 3rem #fff;
-    opacity: 0.65;
-    white-space: nowrap;
-}
-.hero-info p {
-    margin: 0;
-    padding: 0.25rem;
-    font-weight: 700;
-    font-size: 1.1rem;
-}
-@media only screen and (max-width: 400px) {
-    .hero-title-md,
-    .hero-title-lg {
-        display: none;
-    }
-}
-@media only screen and (max-width: 960px) and (min-width: 400px) {
-    .hero-title-sm,
-    .hero-title-lg {
-        display: none;
-    }
-}
-@media only screen and (min-width: 960px) {
-    .hero-title-sm,
-    .hero-title-md {
-        display: none;
-    }
-} */
+
 
 /* TEMP ************************* */
 .hero {
@@ -227,7 +189,9 @@ main {
     background-position: center;
     padding: 150px 0;
 }
-
+.hero-home {
+    background-image: url("../images/vista-aerea-paco-municipal-de-sao-bernardo-do-campo.webp");
+}
 .hero-discover {
     background-image: url("../images/discover/atardecer-sao-bernardo.webp");
 }
@@ -380,6 +344,12 @@ footer section {
     grid-gap: 10px;
     margin: 0 auto;
     max-width: 100%;
+
+}
+
+div.footer-title > img{
+    border-radius: 50%;
+    margin: 5px;
 }
 .footer-title {
     grid-column: 1 / span 9;
@@ -694,6 +664,15 @@ footer section {
     background-color: var(--secondary-color);
     border: none;
 }
+
+section.style6 h3 {
+    color: var(--text-color-main);
+
+}
+.style6 h3.dark-mode{
+    color: var(--text-color-secondary);
+}
+se
 .text-bold {
     font-size: 1.1em;
     font-weight: 700;
@@ -721,7 +700,7 @@ footer section {
 }
 .style3 {
     background-color: var(--accent1-color);
-    color: var(--text-color-secondary);
+    color: var(--text-color-primary);
     padding: 20px;
 }
 .style3 .explore-img {
@@ -730,6 +709,9 @@ footer section {
     flex-wrap: wrap;
     align-items: center;
     gap: 5px;
+}
+.style3.dark-mode{
+    color: var(--text-color-main);
 }
 .style4 {
     background-color: var(--accent3-color);
@@ -748,12 +730,29 @@ footer section {
 .style6 {
     border-style: solid;
     border-width: 2px;
-    border-color: var(--accent3-color);
+    border-color: var(--);
     padding: 20px;
 }
+.style6.dark-mode h3 {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--text-color-secondary);
+    color: var(--text-color-secondary);
+    padding: 20px;
+
+}
+ section.style6.dark-mode > h2 {
+    color: var(--text-color-secondary);
+}
+
+
 .fast-facts {
     color: var(--accent3-color);
 }
+.fast-facts.dark-mode h2{
+    color: var(--accent3-color);
+}
+
 .facts {
     display: flex;
     justify-content: center;
@@ -766,6 +765,9 @@ footer section {
     color: var(--accent3-color);
     margin: 0;
     text-align: center;
+}
+.facts.dark-mode{
+    color: var(--text-color-secondary);
 }
 .facts p {
     font-size: 0.8em;

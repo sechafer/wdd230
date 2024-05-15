@@ -18,7 +18,7 @@ function getCopyrightYear() {
         element.classList.toggle("dark-mode");
 
         const sections = document.querySelectorAll(
-            "main, div.info, div.spotlights, div.event, div.event-card, section.style5, article.card, div.weather-info, div.form-wrapper, section.member, section.member a, div.form-wrapper, form label.top input, form label.sbs, form fieldset, form legend, form label.top, figcaption, section .hero-discover"
+            "main, div.info, div.spotlights, div.event, div.event-card, section.style5, article.card, div.weather-info, div.form-wrapper, section.member, section.member a, div.form-wrapper, form label.top input, form label.sbs, form fieldset, form legend, form label.top, figcaption, section .hero-discover,section.style1,section.style2, section.style3, section.style4, section.style5, .style6"
         );
         sections.forEach((section) => {
             section.classList.toggle("dark-mode");
