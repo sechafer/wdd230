@@ -130,7 +130,7 @@ article>div > div > div > a {
     
       }
     .card-header-gold{
-        background-color: -var(--accent3-color);
+        background-color: var(--accent3-color);
       }
 
       body > main > div.spotlights > div > article> h3{
