@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="favicon.ico">
         <title>Samuel Eli Chacon Fernandez - WDD 230 - Form Html</title>
-        <meta name="description" content="WDD 230 - Web Frontend Development. Samuel Eli Chacon Fernandez's course assignment portal.">
+        <meta name="description" content="WDD 230 - Web Frontend Development. Samuel Eli Chacon Fernandez's course assignment portal  - Form Html.">
         <meta name="author" content="Samuel Eli Chacon Fernandez">
         <!-- Facebook Meta Tags -->
         <meta property="og:locale" content="en_US" />
@@ -28,24 +28,7 @@
         <link rel="stylesheet" href="styles/larger.css">
         <link rel="stylesheet" href="styles/form.css">
         <script src="scripts/getDates.js"></script>
-        <script>
-            function validatePasswords() {
-                const password = document.getElementById('password');
-                const confirmPassword = document.getElementById('confirm_password');
-                if (password.value !== confirmPassword.value) {
-                    alert('Passwords do not match. Please try again.');
-                    password.value = '';
-                    confirmPassword.value = '';
-                    password.focus();
-                    return false;
-                }
-                return true;
-            }
-            
-            function updateRangeValue(val) {
-                document.getElementById('rangeValue').textContent = val;
-            }
-        </script>
+        
     </head>
 <body>
     <header>
@@ -69,7 +52,7 @@
     
     <main>
         <!-- Form -->
-        <form action="record.html" method="get">
+        <form action="record.html" method="get" onsubmit="return validatePasswords()">
             <div>
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
@@ -84,17 +67,28 @@
             </div>
             <div>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address from the byui.edu domain">
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address from the byui.edu domain" placeholder="exemplo@byui.edu">
             </div>
             <div>
                 <label for="page_rating">Page Rating:</label>
-                <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" value="5">
-                <output for="page_rating">5</output>
+                <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" value="5" oninput="updateRangeValue(this.value)">
+                <output id="rangeValue">5</output>
             </div>
             <div>
-                <button type="submit">Submit</button>
+                <button type="submit">Send Range Value</button>
             </div>
         </form>
+
+        <section class="card">
+            <div class="card-header">
+                <h2>Information</h2>
+             </div>
+             <div class="card-content" >
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+             </div>
+
+            <!-- aqui aun no tengomas informacion -->
+        </section>
     </main>
     <footer>
         <div class="footer-info">
@@ -102,6 +96,25 @@
     </div>
         <p id="lastModified"></p>
     </footer>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        function validatePasswords() {
+            const password = document.getElementById('password');
+            const confirmPassword = document.getElementById('confirm_password');
+            if (password.value !== confirmPassword.value) {
+                alert('Passwords do not match. Please try again.');
+                password.value = '';
+                confirmPassword.value = '';
+                password.focus();
+                return false;
+            }
+            return true;
+        }
+        
+        function updateRangeValue(val) {
+            document.getElementById('rangeValue').textContent = val;
+        }
+    });
+    </script>
 </body>
 </html>

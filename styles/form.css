@@ -63,6 +63,7 @@ button {
 
 button:hover {
     background-color: #0056b3;
+    color: #f4f4f4;
 }
 
 /* Pseudo-class CSS variables */
