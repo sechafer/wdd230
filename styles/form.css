@@ -1,0 +1,96 @@
+/* styles/form.css */
+
+/* Reset styles */
+body, h1, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, nav, main, footer {
+    margin: 20px;
+}
+
+/* Form styles */
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"],
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+input[type="range"] {
+    width: calc(100% - 20px);
+}
+
+output {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Pseudo-class CSS variables */
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --border-color: #ccc;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"],
+button {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="range"]:focus {
+    outline: none;
+    border-color: #007bff;
+}

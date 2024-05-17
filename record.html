@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="favicon.ico">
-        <title>Samuel Eli Chacon Fernandez - WDD 230 - Form Html</title>
+        <title>Samuel Eli Chacon Fernandez - WDD 230 - Record Html</title>
         <meta name="description" content="WDD 230 - Web Frontend Development. Samuel Eli Chacon Fernandez's course assignment portal.">
         <meta name="author" content="Samuel Eli Chacon Fernandez">
         <!-- Facebook Meta Tags -->
@@ -62,39 +62,16 @@
                  <li><a   href="index.html">Home</a></li>
                  <li><a href="chamber/index.html">Chamber</a></li>
                  <li><a href="chamber/chamber-site-plan.html">Site Plan</a></li>
-                 <li><a class="active" href="#">Form</a></li>
+                 <li><a class="active" href="form.html">Form</a></li>
              </ul>
          </nav>
      </header>
     
     <main>
-        <!-- Form -->
-        <form action="record.html" method="get">
-            <div>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters and alphanumeric">
-            </div>
-            <div>
-                <label for="confirm_password">Confirm Password:</label>
-                <input type="password" id="confirm_password" name="confirm_password" required>
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address from the byui.edu domain">
-            </div>
-            <div>
-                <label for="page_rating">Page Rating:</label>
-                <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" value="5">
-                <output for="page_rating">5</output>
-            </div>
-            <div>
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+        <section>
+            <h2>Form Submission Confirmation</h2>
+            <p>Thank you for submitting the form. Your information has been received.</p>
+        </section>
     </main>
     <footer>
         <div class="footer-info">
