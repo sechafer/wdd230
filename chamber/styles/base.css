@@ -196,7 +196,9 @@ main {
     background-image: url("../images/discover/atardecer-sao-bernardo.webp");
 }
 
-
+.hero-join {
+    background-image: url("../images/discover/atardecer-sao-bernardo.webp");
+}
 
 .container {
     max-width: 1200px;
@@ -911,11 +913,11 @@ form {
 }
 .np {
     background-color: var(--membershipNP);
-    color: var(--text-color-secondary);
+    color: var(--text-color--main);
 }
 .bronze {
     background-color: var(--membershipBronze);
-    color: var(--text-color-secondary);
+    color: var(--text-color--main);
 }
 .silver {
     background-color: var(--membershipSilver);
@@ -930,7 +932,7 @@ form fieldset {
     margin: 1rem 0;
     border: 1px solid var(--primary-color);
     border-radius: 10px;
-    padding: 0.5rem 2%;
+    padding: 0.5rem 20%;
 }
 form fieldset.dark-mode {
     border: 1px solid var(--text-color-secondary);
@@ -950,7 +952,7 @@ form label.top,
 form div {
     display: block;
     padding-top: 1rem;
-    color: var(--accent1-color);
+    color: var(--text-color--main);
     font-size: 0.8rem;
 }
 form label.top.dark-mode {
@@ -987,7 +989,7 @@ form fieldset .dark-mode {
 }
 form .submitBtn {
     border: none;
-    background-color: var(--accent3-color);
+    background-color: var(--primary-color);
     color: var(--text-color-secondary);
     padding: 0.75rem 1.5rem;
     border-radius: 1rem;
