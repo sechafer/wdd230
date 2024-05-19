@@ -30,5 +30,23 @@
             "title address1 phone"
             ". address2 email";
     }
-
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nav-info input {
+        display: none;
+    }
+    .form-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+        grid-template-areas:
+            "header header"
+            "form membership";
+    }
+    .list section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "title address1 phone"
+            ". address2 email";
+    }
 }
