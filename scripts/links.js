@@ -17,9 +17,9 @@ async function getLinks() {
 }
 
 const displayLinks = (weeks) => {
-    const list = document.querySelector(".la-card ul");
+    const list = document.querySelector(".card-content .la-card");
     if (!list) {
-        console.error("No .la-card ul element found.");
+        console.error("No .la-card element found.");
         return;
     }
 
