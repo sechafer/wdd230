@@ -18,6 +18,10 @@ async function getLinks() {
 
 const displayLinks = (weeks) => {
     const list = document.querySelector(".la-card ul");
+    if (!list) {
+        console.error("No .la-card ul element found.");
+        return;
+    }
 
     weeks.forEach((week) => {
         const listItem = document.createElement("li");
@@ -41,5 +45,5 @@ const displayLinks = (weeks) => {
     });
 };
 
-// Execute the function to fetch and display the links
-getLinks();
+// Ensure the DOM is fully loaded before running the script
+document.addEventListener("DOMContentLoaded", getLinks);
