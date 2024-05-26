@@ -1,0 +1,101 @@
+{
+  "weeks": [
+    {
+      "week": "Week 1",
+      "links": [
+        {
+          "url": "https://codepen.io/Samuel-Eli-Chacon-Fernandez/pen/yLrGwYg",
+          "title": "Exercise JS"
+        },
+        {
+          "url": "./week01/media-query.html",
+          "title": "Exercise CSS"
+        },
+        {
+          "url": "./chamber/chamber-site-plan.html",
+          "title": "Initial Site Plan"
+        }
+      ]
+    },
+    {
+      "week": "Week 2",
+      "links": [
+        {
+          "url": "week02/design.html",
+          "title": "Css Desing"
+        },
+        {
+          "url": "https://codepen.io/Samuel-Eli-Chacon-Fernandez/pen/LYvovzJ",
+          "title": "Codepen Activity"
+        },
+        {
+          "url": "./week02/bom.html",
+          "title": "BOM"
+        }
+      ]
+    },
+    {
+      "week": "Week 3",
+      "links": [
+        {
+          "url": "week03/lazyload.html",
+          "title": "Lazy Load"
+        },
+        {
+          "url": "images/landscape.webp",
+          "title": "WebP"
+        },
+        {
+          "url": "week03/responsive-images.html",
+          "title": "Responsive Images"
+        },
+        {
+          "url": "week03/bom.html",
+          "title": "new BOM"
+        }
+      ]
+    },
+    {
+      "week": "Week 4",
+      "links": [
+        {
+          "url": "https://codepen.io/Samuel-Eli-Chacon-Fernandez/pen/zYQvJgV",
+          "title": "Pseudo-class Fun"
+        },
+        {
+          "url": "week04/images/week04-css-combinator.JPG",
+          "title": "CSS Combinator"
+        },
+        {
+          "url": "week04/tablebuild.html",
+          "title": "Table Build"
+        },
+        {
+          "url": "week04/form/index.html",
+          "title": "Form"
+        }
+      ]
+    },
+    {
+      "week": "Week 5",
+      "links": [
+        {
+          "url": "https://codepen.io/Samuel-Eli-Chacon-Fernandez/pen/YzbWgRE",
+          "title": "Pseudo-elements"
+        },
+        {
+          "url": "week05/new-ward-members.json",
+          "title": "JSON"
+        },
+        {
+          "url": "week05/prophets.html",
+          "title": "Prophets"
+        },
+        {
+          "url": "week05/weather.html",
+          "title": "Weather API"
+        }
+      ]
+    }
+  ]
+}

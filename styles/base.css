@@ -226,6 +226,19 @@ main {
 
 
 
+.la-card {
+    list-style-type: none;
+    padding: 0;
+}
+
+.la-card li {
+    padding: 5px;
+}
+
+.la-card li a {
+    font-size: 0.72em;
+}
+
 /* Footer */
 footer {
     display: flex;
@@ -262,4 +275,70 @@ footer .footer-info {
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+/* Weather Article ********************************* */
+
+#weather h4 {
+    margin: 0;
+    padding: 15px;
+    background-color: var(--accent2-color);
+    color: white;
+    text-transform: uppercase;
+}
+/* #weather div {
+    text-align: center;
+    padding: 15px;
+    background-color: #f8fafc;
+} */
+#weather p {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+#weather figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.temp-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#current-temp {
+    font-size: 3em;
+    font-weight: 800;
+}
+.temp-area figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+#weather-description {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.alt-weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+
+}
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 15px;
+    /* border: 1px solid var(--accent3-color); */
+    font-size: .8rem;
+}
+.weather-box span{
+    font-weight: 800;
+    font-size: 1.5rem;
 }
