@@ -1,6 +1,6 @@
 
 /* ****************************************************
-    Directory of Members
+                 Directory of Members
 ***************************************************** */
 const baseURL = "https://sechafer.github.io/wdd230/";
 const dataURL = "https://sechafer.github.io/wdd230/chamber/data/members.json";
@@ -14,7 +14,7 @@ async function getMembers() {
             throw new Error("Failed to fetch data");
         }
         const data = await response.json();
-        // console.log(data);
+      
         displayMembers(data.members);
         return data;
     } catch (error) {
@@ -25,11 +25,11 @@ async function getMembers() {
 getMembers();
 
 const displayMembers = (members) => {
-    // console.log(members);
+    
     const cards = document.querySelector("#members");
 
     members.forEach((member) => {
-        // // console.log(week);
+        
         const bizCard = document.createElement("section");
         bizCard.setAttribute("class","member");
         const companyName = document.createElement("h3");
@@ -57,8 +57,6 @@ const displayMembers = (members) => {
         bizCard.appendChild(address2);
         bizCard.appendChild(phone);
         bizCard.appendChild(website);
-
-        // add the section card to the "cards" div
         cards.appendChild(bizCard);
         
     });
@@ -69,12 +67,11 @@ const listBtn = document.querySelector("#listBtn");
 const display = document.querySelector("article");
 
 gridBtn.addEventListener("click", () => {
-    // example using arrow function
     display.classList.add("grid");
     display.classList.remove("list");
 });
 
-listBtn.addEventListener("click", showList); // example using defined function
+listBtn.addEventListener("click", showList); 
 
 function showList() {
     display.classList.add("list");
