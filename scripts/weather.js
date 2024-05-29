@@ -1,4 +1,5 @@
 
+document.addEventListener("DOMContentLoaded", function() {
 const apiKey = "4376d4be998704444698df934e016118";
 
 const lat = -23.72803;
@@ -58,4 +59,5 @@ function displayResults(data) {
         weatherIcon.setAttribute("height", "100");
         captionDesc.innerHTML = `${desc}`;
     });
-}
+};
+});
