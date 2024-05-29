@@ -1311,3 +1311,32 @@ button.homeBtn {
     font-size: 1.2rem;
     font-weight: 800;
 }
+
+/* Banner on home page */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    padding: 30px;
+    margin-top: 2rem;
+    text-align: center;
+}
+.banner-hide {
+    display: none;
+}
+
+.banner p {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+#closeBanner {
+    background: none;
+    color: var(--text-color-primary);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: x-large;
+    /* margin-top: 5px; */
+}
