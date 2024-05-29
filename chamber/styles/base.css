@@ -1317,7 +1317,7 @@ button.homeBtn {
     display: flex;
     justify-content: space-between;
     background-color: var(--accent1-color);
-    color: var(--accent2-color);
+    color: var(--text-color-main);
     padding: 30px;
     margin-top: 2rem;
     text-align: center;
@@ -1332,7 +1332,7 @@ button.homeBtn {
 }
 
 #closeBanner {
-    background: none;
+    background-color:var(--accent1-color);
     color: var(--text-color-primary);
     border: none;
     padding: 5px 10px;
