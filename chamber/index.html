@@ -112,14 +112,33 @@
                     <div class="weather-info">
                         <article id="weather">
                             <h3>Weather Right Now</h3>
-                            
+                            <p id="location"></p>
+                            <figure>
+                                <div class="temp-area">
+                                </div>
+                                <figcaption id="weather-description"></figcaption>
+                            </figure>
+                            <div class="alt-weather">
+                                <div class="weather-box">Feels Like:<span id="feels-like"></span></div>
+                                <div class="weather-box">Humidity:<span id="humidity"></span></div>
+                                <div class="weather-box">Wind:<span id="wind-speed"></span></div>
+                                <div class="weather-box">Wind Chill:<span id="wind-chill"></span></div>
+                            </div>
                         </article>
-                        <article id="five-day">
-                            <h3>Five Day Forecast</h3>
+                        <article id="three-day">
+                            <h3>three Day Forecast</h3>
                             <div id="forecast"></div>
                         </article>
                     </div>
+                <div id="biz-images-header">
+                            
+                        <p id="message"><span></span></p>
+                    
+                    <h3><span class="label"> </span><span class="visits"></span></h3>
+                    
+                </div>
                 </section>
+                
             </div>
 
             <div class="spotlights">
@@ -210,7 +229,7 @@
                 <div class="footer-nav">
                     <h3>Links</h3>
                     <ul class="">
-                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#" class="active-page">Home</a></li>
                         <li><a href="./discover.html">Discover</a></li>
                         <li><a href="./directory.html">Directory</a></li>
                         <li><a href="./join.html">Join</a></li>
@@ -233,6 +252,8 @@
      
         
         <script src="./scripts/chamber.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/windchill.js"></script>
     </body>
 
 </html>
