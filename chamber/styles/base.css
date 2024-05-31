@@ -8,7 +8,7 @@
 :root {
     --primary-color: #004d40; /* Verde oscuro */
     --secondary-color: #fafafa; /* Blanco */
-    --accent1-color: #ff9800; /* Naranja */
+    --accent1-color: #1c4b0b; /* Naranja */
     --accent2-color: #3949ab; /* Azul oscuro */
     --accent3-color: #e91e63; /* Rosa */
     --text-color-main: #212121; /* Gris oscuro */
@@ -137,8 +137,10 @@ article>div > div > div > a {
         background-color: var(--accent3-color);
       }
      .spotlights > div > article > div > div > address{
-        color: var(--text-color-secondary);
+        color: var(--text-color--main);
      }
+    div.spotlights > div > article > div > div > address
+    {color:blanchedalmond;}
 
 /* Dark Mode Button Switch ********************* */
 .dark-mode-btn {
@@ -262,10 +264,12 @@ main {
     border-radius: 0.5rem;
     border-width: 1px;
     border-color: var(--accent1-color);
-  
+
     background-color: var(--accent2-color);
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
+div > div > div a{color: #212121;}
+
 .card-header {
     margin: 0;
     border-radius: 0.5rem 0.5rem 0 0;
@@ -294,6 +298,10 @@ main {
     flex-direction: column;
     gap: 5px;
 }
+
+
+
+
 
 .card.dark-mode {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.7);
